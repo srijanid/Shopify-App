@@ -1,6 +1,6 @@
-# shopify
+# Shopify
 
-A new Flutter project.
+This is a flutter eCommerce app with Firebase as a backend.
 
 ## Getting Started
 
