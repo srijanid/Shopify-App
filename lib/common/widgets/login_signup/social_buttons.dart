@@ -26,7 +26,7 @@ class TSocialButtons extends StatelessWidget {
             ),
           ),
         ),
-        const SizedBox(height: TSizes.defaultSpace),
+        const SizedBox(width: TSizes.defaultSpace),
         Container(
           decoration: BoxDecoration(
               border: Border.all(color: TColors.grey),
@@ -40,7 +40,7 @@ class TSocialButtons extends StatelessWidget {
             ),
           ),
         ),
-        const SizedBox(height: TSizes.spaceBtwSections),
+        const SizedBox(width: TSizes.spaceBtwSections),
         Container(
           decoration: BoxDecoration(
               border: Border.all(color: TColors.grey),
