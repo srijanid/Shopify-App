@@ -3,6 +3,7 @@ import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
 import 'package:shopify/features/authentication/screens/password_configuration/forget_password.dart';
 import 'package:shopify/features/authentication/screens/signup/signup.dart';
+import 'package:shopify/navigation_menu.dart';
 import 'package:shopify/utils/constants/sizes.dart';
 import 'package:shopify/utils/constants/text_strings.dart';
 
@@ -55,7 +56,7 @@ class TLoginForm extends StatelessWidget {
             SizedBox(
                 width: double.infinity,
                 child: ElevatedButton(
-                    onPressed: () {}, child: const Text(TTexts.signIn))),
+                    onPressed: () => Get.to(()=> const NavigationMenu()), child: const Text(TTexts.signIn))),
             const SizedBox(height: TSizes.spaceBtwItems),
             //Create Account Button
             SizedBox(
