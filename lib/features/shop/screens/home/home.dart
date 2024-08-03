@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:shopify/common/widgets/custom_shapes/containers/primary_header_container.dart';
 import 'package:shopify/common/widgets/custom_shapes/containers/search_container.dart';
+import 'package:shopify/common/widgets/products/product_cards/product_card_vertical.dart';
 import 'package:shopify/common/widgets/texts/section_heading.dart';
 import 'package:shopify/features/shop/screens/home/widgets/home_appbar.dart';
 import 'package:shopify/utils/constants/image_strings.dart';
@@ -51,12 +52,18 @@ class HomeScreen extends StatelessWidget {
             ///Body -- below categories
             Padding(
               padding: EdgeInsets.all(TSizes.defaultSpace),
-              child: TPromoSlider(banners: [
-                TImages.promoBanner1,
-                TImages.promoBanner2,
-                TImages.promoBanner3,
-                TImages.promoBanner4,
-              ],),
+              child: Column(
+                children: [
+                  TPromoSlider(banners: [
+                    TImages.promoBanner1,
+                    TImages.promoBanner2,
+                    TImages.promoBanner3,
+                    TImages.promoBanner4,
+                  ],),
+                  SizedBox(height: TSizes.spaceBtwItems),
+                  TProductCardVertical(),
+                ],
+              ),
             )
           ],
         ),
@@ -64,6 +71,8 @@ class HomeScreen extends StatelessWidget {
     );
   }
 }
+
+
 
 
 
